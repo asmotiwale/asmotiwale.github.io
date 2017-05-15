@@ -1,0 +1,20 @@
+body{
+	
+background: linear-gradient(250deg, #0b39f5, #11ec36);
+
+
+-webkit-animation: AnimationName 5s ease infinite;
+animation: AnimationName 5s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+
+}
