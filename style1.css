@@ -1,20 +1,73 @@
-body{
-	
-background: linear-gradient(250deg, #0b39f5, #11ec36);
-
-
--webkit-animation: AnimationName 5s ease infinite;
-animation: AnimationName 5s ease infinite;
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 54%}
-    50%{background-position:100% 47%}
-    100%{background-position:0% 54%}
-}
-@keyframes AnimationName { 
-    0%{background-position:0% 54%}
-    50%{background-position:100% 47%}
-    100%{background-position:0% 54%}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    background: linear-gradient(69deg, #0ffbf2, #0a27c6, #f2102c);
+    background-size: 600% 600%;
+    -webkit-animation: Gradient 11s ease infinite;
+    -moz-animation: Gradient 11s ease infinite;
+    animation: Gradient 11s ease infinite;
+}
+    
+    
+    @-webkit-keyframes Gradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes Gradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes Gradient { 
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 38%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
 }

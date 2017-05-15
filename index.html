@@ -1,26 +1,19 @@
 <html>
-  <style>
-  	body{
-	 background-color: #0000FF;
-   padding: 0px;
-   margin: 0px;
- }
-
-#gradient
-{
-  width: 100%;
-  height: 800px;
-  padding: 0px;
-  margin: 0px;
-}
-  </style>
     <head>
     <link rel="shortcut icon" href="images/myicon.ico">
-    <link rel="icon" type="image/gif" href="animated_myicon1.gif">
     <title>Anuraag's Profile</title>
-    <script type="text/javascript" src="jj.js"></script>
+     <link rel = "stylesheet" type = "text/css" href = "style1.css" />
   </head>
   <body>
-    <div id="gradient" />
+
+    <div id="snackbar">Welcome. Hope you are having a great day!</div>
+    <script>
+      setTimeout(myFunction(), 7000)
+      function myFunction() {
+      var x = document.getElementById("snackbar")
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
  </body>
 </html>
