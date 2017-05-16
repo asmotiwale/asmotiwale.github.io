@@ -5,6 +5,10 @@ html, body {
     padding: 0;
 }
 
+#name{
+    color: #fff;
+}
+
 body {
     background: linear-gradient(69deg, #0ffbf2, #0a27c6, #f2102c);
     background-size: 600% 600%;
@@ -70,4 +74,44 @@ body {
 @keyframes fadeout {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
+}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: rgba(0,1,1,0.3);
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color:red;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color:rgba(0, 0, 0, 0.7);
+    color:#fff;
 }

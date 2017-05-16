@@ -9,8 +9,57 @@
   </head>
   <body>
 
+  <div id="name"><h1><center>ANURAAG MOTIWALE</h1></div>
     <!-- div for snackbar -->
     <div id="snackbar">Welcome. Hope you are having a great day!</div>
     <script type="text/javascript" src="js/sbar.js"></script>
+ 
+    <!-- div for tab view -->
+    <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
+  <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+  <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
+  <button class="tablinks" onclick="openCity(event, 'Interests')">Interests</button>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Short description</p>
+</div>
+
+<div id="Education" class="tabcontent">
+  <h3>Education</h3>
+  <p>Education details</p> 
+</div>
+
+<div id="Projects" class="tabcontent">
+  <h3>Projects</h3>
+  <p>Project description</p>
+</div>
+
+<div id="Interests" class="tabcontent">
+  <h3>Interest</h3>
+  <p>My hobbies</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    
   </body>
 </html>
