@@ -34,7 +34,7 @@
   <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
   <button class="tablinks" onclick="openCity(event, 'Interests')">Interests</button>
 </div>
-
+<div class="wrapper">
 <div id="About" class="tabcontent">
   <h3>About</h3>
   <p>Short description</p>
@@ -54,25 +54,8 @@
   <h3>Interest</h3>
   <p>My hobbies</p>
 </div>
-
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+</div>
+<script type="text/javascript" src="js/tabjs.js"></script>
     
   </body>
 </html>
