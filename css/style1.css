@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background: linear-gradient(121deg, #3b00f3, #f30000, #42f300);
+    background: linear-gradient(121deg, #3333ff, #e6f9ff, #0099ff);
 background-size: 600% 600%;
 -webkit-animation: AnimationName 31s ease infinite;
 -moz-animation: AnimationName 31s ease infinite;
