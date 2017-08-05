@@ -1,61 +1,47 @@
-<html>
-    <head>
-    <!-- Stting title icon and text -->
-    <link rel="shortcut icon" href="images/myicon.ico">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
-    <title>Anuraag's Profile</title>
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="images/myicon.ico">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel = "stylesheet" type = "text/css" href = "css/style1.css" />
 
-      <!-- Linking the style sheet -->
-     <link rel = "stylesheet" type = "text/css" href = "css/style1.css" />
+  <title>Anuraag's Profile</title>
+</head>
 
-     <style>
-.w3-allerta {
-  font-family: "Allerta Stencil", Sans-serif;
-}
-</style>
-  </head>
-  <body>
+<body>
+<section class = "content" id = "name">
+<div style="color:white;height: 110px;background-color:black">
 
- 
+<h1><center>ANURAAG MOTIWALE</center></h1>
 
-  <div class="w3-container w3-black w3-center w3-allerta">
-  <h1><p class="w3-xlarge">ANURAAG MOTIWALE</p></h1>
+<center>
+<a target="_blank" title="Follow me on Github" href="http://www.github.com/asmotiwale"><img alt="Follow me on Github" src="images/git_icon.png" border=0 hspace = "20"></a>
 
+<a target="_blank" title="Follow me on LinkedIn" href="https://www.linkedin.com/in/anuraag-motiwale-229bb79b/"><img alt="Follow me on LinkedIn" src="images/lin_icon.png" border=0></a>
+</center>
 </div>
-    <!-- div for snackbar -->
-    <div id="snackbar">Welcome. Hope you are having a great day!</div>
-    <script type="text/javascript" src="js/sbar.js"></script>
- 
-    <!-- div for tab view -->
-    <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
-  <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
-  <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
-  <button class="tablinks" onclick="openCity(event, 'Interests')">Interests</button>
-</div>
-<div class="wrapper">
-<div id="About" class="tabcontent">
-  <h3>About</h3>
-  <p>Short description</p>
-</div>
+</section>
 
-<div id="Education" class="tabcontent">
-  <h3>Education</h3>
-  <p>Education details</p> 
-</div>
+<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-sm">
+  <div class="container">
+    <div class="navbar-nav mr-auto">
+      <a class="nav-item nav-link active" href="#">About Myself</a>
+      <a class="nav-item nav-link" href="#">Education</a>
+      <a class="nav-item nav-link" href="#">Projects</a>
+      <a class="nav-item nav-link" href="#">Contact Me</a>
+    </div><!-- navbar-nav -->
 
-<div id="Projects" class="tabcontent">
-  <h3>Projects</h3>
-  <p>Project description</p>
-</div>
+  </div><!-- container -->
+</nav>
 
-<div id="Interests" class="tabcontent">
-  <h3>Interest</h3>
-  <p>My hobbies</p>
-</div>
-</div>
-<script type="text/javascript" src="js/tabjs.js"></script>
-    
-  </body>
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+
 </html>
