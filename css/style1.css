@@ -16,7 +16,7 @@ background-size: 600% 600%;
 -moz-animation: AnimationName 31s ease infinite;
 animation: AnimationName 31s ease infinite;
 }
-    
+
 @-webkit-keyframes AnimationName {
     0%{background-position:15% 0%}
     50%{background-position:86% 100%}
@@ -27,12 +27,12 @@ animation: AnimationName 31s ease infinite;
     50%{background-position:86% 100%}
     100%{background-position:15% 0%}
 }
-@keyframes AnimationName { 
+@keyframes AnimationName {
     0%{background-position:15% 0%}
     50%{background-position:86% 100%}
     100%{background-position:15% 0%}
 }
-    
+
 
 #snackbar {
     visibility: hidden;
@@ -56,7 +56,7 @@ animation: AnimationName 31s ease infinite;
 }
 
 @-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;} 
+    from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
 }
 
@@ -66,51 +66,11 @@ animation: AnimationName 31s ease infinite;
 }
 
 @-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;} 
+    from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
 
 @keyframes fadeout {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
-}
-
-/* Style the tab */
-div.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: rgba(0,1,1,0.3);
-}
-
-/* Style the buttons inside the tab */
-div.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-    color:white;
-}
-
-/* Change background color of buttons on hover */
-div.tab button:hover {
-    background-color: #ddd;  
-}
-
-/* Create an active/current tablink class */
-div.tab button.active {
-    background-color: black;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    background-color:rgba(1, 1, 1, 0.7);
-    color:#fff;
 }
